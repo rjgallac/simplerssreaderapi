@@ -3,7 +3,7 @@ const request = require('request');
 var parseString = require('xml2js').parseString;
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000;
 
 feeds = [
     'https://www.hotukdeals.com/rss/all'
