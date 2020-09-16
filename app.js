@@ -1,5 +1,7 @@
 const express = require('express')
-const app = express()
+var cors = require('cors');
+const app = express();
+app.use(cors());
 const feedService = require('./feedService');
 
 const port = process.env.PORT || 3000;
